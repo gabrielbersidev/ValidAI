@@ -43,8 +43,9 @@ export default function DashboardPage() {
   ];
 
   const criticalAlerts = [
-    { product: 'Leite Integral 1L', batch: 'LT-2024-001', days: 2, type: 'expiration', severity: 'high' },
-    { product: 'Vitamina C 500mg', batch: 'VIT-2024-002', quantity: 5, type: 'stock', severity: 'medium' },
+    { product: 'Leite Integral 1L', batch: 'LT-2024-001', days: 2, type: 'expiration', severity: 'high', quantity: 0 },
+    { product: 'Vitamina C 500mg', batch: 'VIT-2024-002', quantity: 5, type: 'stock', severity: 'medium', days: 0 },
+    { product: 'Queijo Meia Cura', batch: 'QJ-2024-005', days: 5, type: 'expired', severity: 'critical', quantity: 0 },
   ];
 
   return (
