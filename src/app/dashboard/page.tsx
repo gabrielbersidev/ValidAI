@@ -196,7 +196,7 @@ export default function DashboardPage() {
                       <p className="text-slate-700">Apenas {product.quantity} un.</p>
                     )}
                     {product.type === 'expired' && (
-                      <p className="text-red-700">Vencido há {Math.abs(product.days)} dia</p>
+                      <p className="text-red-700">Vencido há {Math.abs(product.days ?? 0)} dias</p>
                     )}
                   </div>
                 </div>

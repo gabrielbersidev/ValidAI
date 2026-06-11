@@ -92,19 +92,6 @@ export default function StockPage() {
     setProducts(products.filter((p) => p.id !== id));
   };
 
-  const getStatusColor = (status: string) => {
-    switch (status) {
-      case 'valid':
-        return 'bg-green-50 border-l-4 border-l-green-500';
-      case 'warning':
-        return 'bg-yellow-50 border-l-4 border-l-yellow-500';
-      case 'expired':
-        return 'bg-red-50 border-l-4 border-l-red-500';
-      default:
-        return '';
-    }
-  };
-
   return (
     <div className="flex h-screen bg-slate-50">
       {/* Sidebar */}
